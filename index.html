@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+        <style>
+            #form1{
+                background-image: url(img/mapa-de-mexico-con-estados.jpg);
+                height: 750px;
+                width: 1200px;
+            }
+        </style>
+        <script language="javascript">
+            //VALIDACION CHECKBOX
+            function validacion(formu, obj) {
+                limite=10; //limite de checks a seleccionar
+                num=0;
+                if (obj.checked) {
+                    for (i=0; ele=document.getElementById(formu).children[i]; i++)
+                        if (ele.checked) num++;
+                    if (num>limite)
+                        obj.checked=false;
+                    }
+                }  
+        </script>
+
+        
+    </head>
+    <body >
+        <form id="form1" method="POST" action="agente.php">
+            <input type="checkbox" name="estado[]" onchange="validacion('form1', this)" style="position: absolute; top: 5px; left: 65px;" id="bc" value="0"/>
+            <!--<input type="checkbox" name="check2" onchange="validacion('form1', this)" style="position: absolute; top: 360px; left: 230px;" id="bcs"/>
+            <input type="checkbox" name="check3" onchange="validacion('form1', this)" style="position: absolute; top: 165px; left: 225px;" id="son"/>
+            <input type="checkbox" name="check4" onchange="validacion('form1', this)" style="position: absolute; top: 187px; left: 413px;" id="chi"/>-->
+            
+<!--            <input type="checkbox" name="check5" onchange="validacion('form1', this)" style="position: absolute; top: 325px; left: 618px;" id="coa"/>-->
+            <input type="checkbox" name="estado[]" onchange="validacion('form1', this)" style="position: absolute; top: 309px; left: 647px;" id="nl" value="1"/>
+            <!--<input type="checkbox" name="check7" onchange="validacion('form1', this)" style="position: absolute; top: 340px; left: 349px;" id="sin"/>
+            <input type="checkbox" name="check8" onchange="validacion('form1', this)" style="position: absolute; top: 376px; left: 462px;" id="dur"/>-->
+            
+<!--            <input type="checkbox" name="check9" onchange="validacion('form1', this)" style="position: absolute; top: 425px; left: 548px;" id="zac"/>-->
+            <input type="checkbox" name="estado[]" onchange="validacion('form1', this)" style="position: absolute; top: 450px; left: 614px;" id="slp" value="2"/>
+<!--            <input type="checkbox" name="check11" onchange="validacion('form1', this)" style="position: absolute; top: 393px; left: 690px;" id="tam"/>-->
+            <input type="checkbox" name="estado[]" onchange="validacion('form1', this)" style="position: absolute; top: 482px; left: 453px;" id="nay" value="3"/>
+            
+            <input type="checkbox" name="estado[]" onchange="validacion('form1', this)" style="position: absolute; top: 516px; left: 518px;" id="gdl" value="4"/>
+            <!--<input type="checkbox" name="check14" onchange="validacion('form1', this)" style="position: absolute; top: 459px; left: 561px;" id="ags"/>
+            <input type="checkbox" name="check15" onchange="validacion('form1', this)" style="position: absolute; top: 494px; left: 609px;" id="gnj"/>-->
+            <input type="checkbox" name="estado[]" onchange="validacion('form1', this)" style="position: absolute; top: 519px; left: 645px;" id="qrt" value="5"/>
+            
+            <input type="checkbox" name="estado[]" onchange="validacion('form1', this)" style="position: absolute; top: 535px; left: 713px;" id="hid" value="6"/>
+            <!--<input type="checkbox" name="check18" onchange="validacion('form1', this)" style="position: absolute; top: 571px; left: 497px;" id="col"/>
+            <input type="checkbox" name="check19" onchange="validacion('form1', this)" style="position: absolute; top: 560px; left: 605px;" id="mch"/>
+            <input type="checkbox" name="check20" onchange="validacion('form1', this)" style="position: absolute; top: 571px; left: 673px;" id="edm"/>-->
+            
+            <input type="checkbox" name="estado[]" onchange="validacion('form1', this)" style="position: absolute; top: 569px; left: 697px;" id="cdmx" value="7"/>
+            <!--<input type="checkbox" name="check22" onchange="validacion('form1', this)" style="position: absolute; top: 587px; left: 690px;" id="mor"/>
+            <input type="checkbox" name="check23" onchange="validacion('form1', this)" style="position: absolute; top: 578px; left: 729px;" id="pue"/>
+            <input type="checkbox" name="check24" onchange="validacion('form1', this)" style="position: absolute; top: 566px; left: 735px;" id="tlx"/>-->
+            
+            <!--<input type="checkbox" name="check25" onchange="validacion('form1', this)" style="position: absolute; top: 558px; left: 785px;" id="ver"/>
+            <input type="checkbox" name="check26" onchange="validacion('form1', this)" style="position: absolute; top: 645px; left: 672px;" id="guer"/>-->
+            <input type="checkbox" name="estado[]" onchange="validacion('form1', this)" style="position: absolute; top: 663px; left: 798px;" id="oax" value="8"/>
+<!--            <input type="checkbox" name="check28" onchange="validacion('form1', this)" style="position: absolute; top: 620px; left: 966px;" id="tab"/>-->
+            
+            <!--<input type="checkbox" name="check29" onchange="validacion('form1', this)" style="position: absolute; top: 666px; left: 970px;" id="chis"/>
+            <input type="checkbox" name="check30" onchange="validacion('form1', this)" style="position: absolute; top: 533px; left: 1060px;" id="cam"/>
+            <input type="checkbox" name="check31" onchange="validacion('form1', this)" style="position: absolute; top: 481px; left: 1097px;" id="yuc"/>-->
+            <input type="checkbox" name="estado[]" onchange="validacion('form1', this)" style="position: absolute; top: 573px; left: 1152px;" id="qroo" value="9"/>
+            <input type="submit" style="position: absolute; top: 450; left: 880px; height: 50px; border-radius: 10px" name="enviar">
+
+            
+            </form> 
+    </body>
+</html>
